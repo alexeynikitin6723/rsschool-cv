@@ -94,11 +94,25 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 }
+.page {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch;
+}
 /**************************************/
 ._container {
-	max-width: 1000px;
+	max-width: 1440px;
+	width: 50%;
+	flex: 0 1 50%;
 	padding: 0 15px;
 	margin: 0 auto;
+}
+@media (max-width: 768px) {
+	._container {
+		width: 100%;
+		flex: 0 1 100%;
+	}
 }
 .subtitle {
 	font-size: 24px;
@@ -109,7 +123,7 @@ body {
 }
 .header {
 	position: relative;
-	width: 100%;
+
 	left: 0;
 	top: 0;
 	z-index: 50;
@@ -120,6 +134,7 @@ body {
 	min-height: 70px;
 	align-items: center;
 	justify-content: center;
+	width: 100%;
 }
 
 .menu__list {
@@ -133,9 +148,11 @@ body {
 	font-weight: 600;
 	color: #737373;
 	line-height: calc(24 / 14 * 100%);
+	transition: color 1s;
 }
 .menu__link:hover {
 	text-decoration: underline;
+	color: rgb(255, 254, 254);
 }
 .profile__body {
 	display: flex;
@@ -154,6 +171,9 @@ body {
 	letter-spacing: 7px;
 	color: #737373;
 	text-align: center;
+}
+.main-title {
+	text-transform: uppercase;
 }
 .photo {
 	padding: 15px;
@@ -194,9 +214,11 @@ body {
 .contacts__link {
 	font-weight: normal;
 	color: #84849b;
+	transition: color 1s;
 }
 .contacts__link:hover {
 	text-decoration: underline;
+	color: #cfe2ec;
 }
 .about-me {
 	padding: 30px 15px;
