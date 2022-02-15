@@ -16,32 +16,37 @@
 				<nav class="header__menu menu">
 					<ul class="menu__list">
 						<li class="menu__item">
-							<a href="#" class="menu__link">
+							<a href="#contacts" class="menu__link">
 								Contacts
 							</a>
 						</li>
 						<li class="menu__item">
-							<a href="#" class="menu__link">
+							<a href="#about-me" class="menu__link">
 								Briefly about myself
 							</a>
 						</li>
 						<li class="menu__item">
-							<a href="#" class="menu__link">
+							<a href="#skills" class="menu__link">
 								Skills
 							</a>
 						</li>
 						<li class="menu__item">
-							<a href="#" class="menu__link">
+							<a href="#code" class="menu__link">
 								Code Example
 							</a>
 						</li>
 						<li class="menu__item">
-							<a href="#" class="menu__link">
+							<a href="#education" class="menu__link">
 								Education
 							</a>
 						</li>
 						<li class="menu__item">
-							<a href="#" class="menu__link">
+							<a href="#projects" class="menu__link">
+								Projects
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="#languages" class="menu__link">
 								Languages
 							</a>
 						</li>
@@ -50,39 +55,41 @@
 			</div>
 		</header>
 		<main class="page">
-			<section class="profile _container">
-				<img src="img/photo.jpg" alt="My Photo" width="300" height="300">
-				<div class="profile__title title">
-					<h1 class="main-title">ALEXEY NIKITIN</h1>
+			<section class="profile _container" id="profile">
+				<div class="profile__body">
+					<img class="photo" src="img/photo.jpg" alt="My Photo" width="200" height="200">
+					<div class="profile__title title">
+						<h1 class="main-title">ALEXEY NIKITIN</h1>
+					</div>
 				</div>
 			</section>
-			<section class="contacts _container">
+			<section class="contacts _container" id="contacts">
 				<div class="contacts__body">
-					<h2 class="contacts__subtitle">Contacts</h2>
+					<h2 class="contacts__subtitle subtitle">Contacts</h2>
 					<ul class="contacts__list">
 						<li class="contacts__item">Phone:
 							<a href="tel:+79501726453" class="contacts__link">+7 950 172 64 53</a>
 						</li>
-						<li class="contacts__item">E-mail
+						<li class="contacts__item">E-mail:
 							<a href="mailto:alexey.nikitin6723@gmail.com"
 								class="contacts__link">alexey.nikitin6723@gmail.com</a>
 						</li>
-						<li class="contacts__item">GitHub
+						<li class="contacts__item">GitHub:
 							<a href="https://github.com/alexeynikitin6723/" class="contacts__link">alexeynikitin6723</a>
 						</li>
 					</ul>
 				</div>
 			</section>
-			<section class="about-me _container">
+			<section class="about-me _container" id="about-me">
 				<div class="about-me__body">
-					<h2 class="about-me__subtitle">Briefly about myself</h2>
+					<h2 class="about-me__subtitle subtitle">Briefly about myself</h2>
 					<p class="about-me__text">I’m a student. Now i’m studying at the university for a master’s degree in
 						mathematic cybernetic.</p>
 				</div>
 			</section>
-			<section class="skills _container">
+			<section class="skills _container" id="skills">
 				<div class="skills__body">
-					<h2 class="skills__subtitle">Skills</h2>
+					<h2 class="skills__subtitle subtitle">Skills</h2>
 					<ul class="skills__list">
 						<li class="skills__item">C#</li>
 						<li class="skills__item">HTML</li>
@@ -92,33 +99,45 @@
 					</ul>
 				</div>
 			</section>
-			<section class="code _container">
+			<section class="code _container" id="code">
 				<div class="code__body">
-					<h2 class="code__subtitle">Code Example</h2>
-					<pre class="code__contain">
+					<h2 class="code__subtitle subtitle">Code Example</h2>
+					<div class="code__item">
+						<pre class="code__contain">
 						<code>
-							function MinArgs(a,b)
-							{
-								return (a < b) ? a : b
-							};
+function MinArgs(a,b){
+   return (a < b) ? a : b	
+};
 						</code>
 					</pre>
+					</div>
 				</div>
 			</section>
-			<section class="education _container">
+			<section class="education _container" id="education">
 				<div class="education__body">
-					<h2 class="education__subtitle">Education</h2>
+					<h2 class="education__subtitle subtitle">Education</h2>
 					<ul class="education__list">
-						<li class="education__item">University:<span class="item__name">Udmurt State University</span></li>
-						<li class="education__item">Courses:<span class="item__name">RS Schools Course «JavaScript/Front-end.
+						<li class="education__item">University: <span class="item__name">Udmurt State University</span></li>
+						<li class="education__item">Courses: <span class="item__name">RS Schools Course «JavaScript/Front-end.
 								Stage 0» (in
 								progress)</span></li>
 					</ul>
 				</div>
 			</section>
-			<section class="languages _container">
+			<section class="projects _container" id="projects">
+				<div class=" project__body">
+					<h2 class="projects__subtitle subtitle">Projects</h2>
+					<ul class="projects__list">
+						<li class="projects__item">
+							<a href="https://alexeynikitin6723.github.io/rsschool-cv/" class="project__link">CV</a> is my first
+							project
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="languages _container" id="languages">
 				<div class="languages__body">
-					<h2 class="languages__subtitle">Languages</h2>
+					<h2 class="languages__subtitle subtitle">Languages</h2>
 					<ul class="languages__list">
 						<li class="languages__item">English - A2</li>
 					</ul>
